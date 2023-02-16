@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>start</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header-top">
+            <a class="header-top__logo-link" href="#">
+                <img src="images/logo.svg" alt="logo images" class="header-top__logo-img">
+            </a>
+            <div class="header-top__wrapper">
+                <form class="header-top__form" action="#">
+                    <input class="header-top__input" type="text" placeholder="Поиск зеркал">
+                    <button class="header-top__btn" type="submit">Изготовление на заказ</button>
+                </form>
+                <div class="header-top__contact">
+                    <a class="header-top__contact-link header-top__contact-link--phone" href="tel:+74951292584">
+                        <img src="images/phone.svg" alt="phone image">
+                        +7 (495) 129-25-84
+                    </a>
+                    <a class="header-top__contact-link header-top__contact-link--whatsapp"
+                        href="https://wa.me/79778609976">
+                        <img src="images/whatsapp.svg" alt="whatsapp image">
+                        +7 (977) 860-99-76
+                    </a>
+                </div>
+                <div class="header-top__options">
+                    <a class="header-top__favourite" href="#">
+                        <img src="images/heart.svg" alt="heart image">
+                        <span class="header-top__favourite-span">0</span>
+                    </a>
+                    <a class="header-top__login" href="#">
+                        <img src="images/login.svg" alt="login image">
+                    </a>
+                    <a class="header-top__cart" href="#">
+                        <img src="images/cart.svg" alt="cart image">
+                        <span class="header-top__cart-span">2</span>
+                        <p>71700 р.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <button class="header-bottom__btn">
+                <img src="images/menu.svg" alt="menu button">
+                <p>каталог товаров</p> 
+            </button>
+            <nav class="header-bottom__nav">
+                <ul class="header-bottom__menu-list">
+                    <li class="header-bottom__menu-item header-bottom__menu-item--sale">
+                        <a class="header-bottom__menu-link header-bottom__menu-link--sale" href="#">
+                            <img src="images/sale.svg" alt="">
+                            Распродажа
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item header-bottom__menu-item--info">
+                        Информация
+                        <ul class="header-bottom__info-list">
+                            <li>
+                                <a class="header-bottom__menu-link" href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a class="header-bottom__menu-link" href="#">Дизайнерам</a>
+                            </li>
+                            <li>
+                                <a class="header-bottom__menu-link" href="#">Магазинам</a>
+                            </li>
+                            <li>
+                                <a class="header-bottom__menu-link" href="#">Новости и статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#"> Выезд замерщика</a>
+
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">Оплата</a>
+
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#"> Доставка</a>
+
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#">Монтаж</a>
+
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link" href="#"> Контакты</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+    <main>
+
+        <div class="menu-catalog">
+    <div class="container">
+        <div class="menu-catalog__wrapper">
+            <div class="menu-catalog__list">
+                <div class="menu-catalog__title">
+                    <button class="menu-catalog__exit-btn">
+                        <img src="images/exit.svg" alt="">
+                    </button>
+                    каталог товаров
+                </div>
+                <div class="menu-catalog__sale-lable">
+                    <img src="images/sale-icon.svg" alt="">
+                    Распродажа
+                </div>
+                <ul class="menu-catalog__type-list">
+                    <li class="menu-catalog__type-item menu-catalog__list-title">
+                        По типу
+                    </li>
+                    <li class="menu-catalog__type-item" data-tab-num="tab-1">
+                        <a class="menu-catalog__type-link" href="#">
+                            <img src="images/typelist/1.svg" alt=" type icon">
+                            С подсветкой
+                        </a>
+                    </li>
+                    <li class="menu-catalog__type-item is-active" data-tab-num="tab-2">
+                        <a class="menu-catalog__type-link" href="#">
+                            <img src="images/typelist/2.svg" alt=" type icon">
+                            В Раме
+                        </a>
+                    </li>
+                    <li class="menu-catalog__type-item" data-tab-num="tab-3">
+                        <a class="menu-catalog__type-link" href="#">
+                            <img src="images/typelist/3.svg" alt=" type icon">
+                            Гримерные
+                        </a>
+                    </li>
+                    <li class="menu-catalog__type-item" data-tab-num="tab-4">
+                        <a class="menu-catalog__type-link" href="#">
+                            <img src="images/typelist/4.svg" alt=" type icon">
+                            Напольные
+                        </a>
+                    </li>
+                    <li class="menu-catalog__type-item" data-tab-num="tab-5">
+                        <a class="menu-catalog__type-link" href="#">
+                            <img src="images/typelist/5.svg" alt=" type icon">
+                            На заказ
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-catalog__form-list">
+                    <li class="menu-catalog__form-item menu-catalog__list-title">
+                        Форма
+                    </li>
+                    <li class="menu-catalog__form-item" data-tab-num="tab-6">
+                        <a class="menu-catalog__form-link" href="#">
+                            <img src="images/formlist/1.svg" alt=" form icon">
+                            Прямоугольные
+                        </a>
+                    </li>
+                    <li class="menu-catalog__form-item" data-tab-num="tab-7">
+                        <a class="menu-catalog__form-link" href="#">
+                            <img src="images/formlist/2.svg" alt=" form icon">
+                            Круглые
+                        </a>
+                    </li>
+                    <li class="menu-catalog__form-item" data-tab-num="tab-8">
+                        <a class="menu-catalog__form-link" href="#">
+                            <img src="images/formlist/3.svg" alt=" form icon">
+                            Овальные
+                        </a>
+                    </li>
+                    <li class="menu-catalog__form-item" data-tab-num="tab-9">
+                        <a class="menu-catalog__form-link" href="#">
+                            <img src="images/formlist/4.svg" alt=" form icon">
+                            Необычные
+                        </a>
+                    </li>
+                </ul>
+                <a class="menu-catalog__room" href="#">
+                    <img src="images/room.svg" alt="room image">
+                    Помещение</a>
+            </div>
+            <div class="menu-catalog__tabs">
+                <div class="menu-catalog__tab  tab-1"> content</div>
+                <div class="menu-catalog__tab is-active tab-2">
+                    <div class="menu-catalog__tab-2-wrapper">
+                        <div class="menu-catalog__tab-2-title">
+                            <div class="tab-2-title__wrapper">
+                                <h4 class="tab-2-title">Зеркала в раме</h4>
+                                <span class="tab-2-span">2764 товара</span>
+                            </div>
+                            <a class="tab-2-link" href="#">Посмотреть все</a>
+                        </div>
+                        <div class="menu-catalog__tab-2-lists">
+                            <ul class="menu-catalog__tab-2-list">
+                                <li class="menu-catalog__tab-2-item--title">
+                                    Цвет рамы:
+
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Бежевый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Белый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Бордовый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Бронза
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Венге
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Голубой
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Дерево
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Жёлтый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Зелёный
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Золотой
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Коричневый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Красный
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Оранжевый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Розовый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Серебряный
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Серый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Фиолетовый
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Чёрный
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="menu-catalog__tab-2-list">
+                                <li class="menu-catalog__tab-2-item--title">
+                                    Форма рамы:
+
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Классическая
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Коробочка
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Обратная
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Парус
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Округлая
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Голубой
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="menu-catalog__tab-2-list">
+                                <li class="menu-catalog__tab-2-item--title">
+                                    Материал рамы:
+
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Дерево
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Пластик
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Алюминий
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="menu-catalog__tab-2-list">
+                                <li class="menu-catalog__tab-2-item--title">
+                                    Ширина рамы:
+
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        До 4 см
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        От 4 до 7 см
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        От 7 см
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="menu-catalog__tab-2-list">
+                                <li class="menu-catalog__tab-2-item--title">
+                                    Назначение:
+
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Для ванной
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        В прихожую
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Для спальни
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Коммерческие
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="menu-catalog__tab-2-list">
+                                <li class="menu-catalog__tab-2-item--title">
+                                    Стиль
+
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Современный
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item">
+                                    <a class="menu-catalog__tab-2-link" href="#">
+                                        Минимализм
+                                    </a>
+                                </li>
+
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Модерн
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Скандинавский
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Хай-тек
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Лофт
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Классический
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Неоклассика
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Прованс и Кантри
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Эклектика
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Эко
+                                    </a>
+                                </li>
+                                <li class="menu-catalog__tab-2-item"><a class="menu-catalog__tab-2-link" href="#">
+                                        Восточный
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a class="tab-2-link tab-2-link--bottom" href="#">Перейти в каталог</a>
+                    </div>
+                    <div class="menu-catalog__discon">
+                       
+                        <h4 class="menu-catalog__discon-title">- 15%</h4>
+                        <h5 class="menu-catalog__discon-subtitle">На все
+                            Зеркала</h5>
+                    </div>
+                </div>
+                <div class="menu-catalog__tab tab-3"> content</div>
+                <div class="menu-catalog__tab tab-4"> content</div>
+                <div class="menu-catalog__tab tab-5"> content</div>
+                <div class="menu-catalog__tab tab-6"> content</div>
+                <div class="menu-catalog__tab tab-7"> content</div>
+                <div class="menu-catalog__tab tab-8"> content</div>
+                <div class="menu-catalog__tab tab-9"> content</div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+        <section class="title-slider">
+    <div class="title-slider__inner">
+        <div class="title-slider__items">
+            <div class="title-slider__item">
+                <div class="container">
+                    <div class="title-slider__title-wrapper">
+                        <h1 class="title-slider__title">
+                            <span>Более 2000</span> зеркал в раме
+                        </h1>
+                        <p class="title-slider__descr">
+                            Изгатовление от 3х дней <span>по Вашим размерам</span>
+                        </p>
+                        <button class="title-slider__btn">Перейти в каталог</button>
+                    </div>
+                </div>
+            </div>
+            <div class="title-slider__item">
+                <div class="container">
+                    <div class="title-slider__title-wrapper">
+                        <h1 class="title-slider__title">
+                            <span>Более 2000</span> зеркал
+                        </h1>
+                        <p class="title-slider__descr">
+                            Изгатовление от 3х дней <span>по Вашим размерам</span>
+                        </p>
+                        <button class="title-slider__btn">Перейти в каталог</button>
+                    </div>
+                </div>
+            </div>
+            <div class="title-slider__item">
+                <div class="container">
+                    <div class="title-slider__title-wrapper">
+                        <h1 class="title-slider__title">
+                            <span>Более 2000</span> зеркал
+                        </h1>
+                        <p class="title-slider__descr">
+                            Изгатовление от 3х дней <span>по Вашим размерам</span>
+                        </p>
+                        
+                        <button class="title-slider__btn">Перейти в каталог</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="size-info">
+    <div class="container">
+        <div class="size-info__wrapper">
+            <h3 class="size-info__title">Изготовим зеркало <span> по Вашим размерам!</span>
+            </h3>
+            <button class="size-info__btn">Вызвать замерщика</button>
+        </div>
+    </div>
+</section>
+        <section class="type-mirror">
+    <div class="container">
+        <div class="type-mirror__btn-tabs">
+            <div class="type-mirror__btn-tab active" data-tab="#type-tab1">
+                <h5 class="type-mirror__title-tab">Типы зеркал</h5>
+                <p class="type-mirror__num-tab">8 позиций</p>
+            </div>
+            <div class="type-mirror__btn-tab" data-tab="#type-tab2">
+                <h5 class="type-mirror__title-tab">Для помещения</h5>
+                <p class="type-mirror__num-tab">2764 товара</p>
+            </div>
+            <div class="type-mirror__btn-tab" data-tab="#type-tab3">
+                <h5 class="type-mirror__title-tab">Для улици</h5>
+                <p class="type-mirror__num-tab">123 товара</p>
+            </div>
+        </div>
+        <div class="type-mirror__items-tab">
+            <div class="type-mirror__item-tab active" id="type-tab1">
+                <p class="type-mirror__tab-content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolorem perspiciatis itaque
+                    dolor a qui, possimus, ducimus rerum hic corporis quia amet voluptatibus ratione. Impedit quo ab
+                    temporibus enim dicta.
+                </p>
+            </div>
+            <div class="type-mirror__item-tab" id="type-tab2">
+                <p class="type-mirror__tab-content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                    illum, deleniti illo ad vel ea in culpa quidem corrupti eaque nisi error rem quos inventore
+                    consectetur accusantium eos sed quasi quod. Laudantium animi vero nam fugiat temporibus in velit
+                    minus quae. Tempore mollitia quia laudantium illum, soluta ab perferendis, excepturi quod placeat
+                    repellendus voluptates asperiores repudiandae nesciunt doloribus, at sunt deleniti itaque. Dolore
+                    impedit delectus veritatis dicta obcaecati eveniet culpa, ullam, aut recusandae sint est, commodi
+                    doloremque aperiam? Nostrum, molestiae quibusdam at placeat aliquam numquam tenetur necessitatibus
+                    porro, nemo cumque atque obcaecati similique quo? Dicta non natus magnam recusandae ipsum, beatae
+                    excepturi facere ab nihil maxime, necessitatibus reprehenderit voluptate ducimus voluptates culpa
+                    dolorem blanditiis atque eaque. Doloremque amet obcaecati unde, molestias consectetur itaque?</p>
+
+            </div>
+            <div class="type-mirror__item-tab" id="type-tab3">
+                <p class="type-mirror__tab-content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi aspernatur autem nam saepe dolorum
+                    inventore possimus maiores totam delectus in. Ad.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="product-slider">
+    <div class="container">
+        <h5 class="product-slider__title">Хиты продаж</h5>
+        <div class="product-slider__items">
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item product-slider__item--sale">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                Любой размер, 29 декабря
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-slider__item">
+                <div class="product-slider__images">
+                    <img src="images/products-slider/slide1/1.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/2.png" alt="product image" class="product-slider__image">
+                    <img src="images/products-slider/slide1/3.png" alt="product image" class="product-slider__image">
+                </div>
+                <div class="product-slider__item-sale">- 35%</div>
+                <div class="product-slider__content-wrapper">
+                    <div class="product-slider__instock-inner">
+                        <div class="product-slider__instock-wrapper">
+                            <div class="product-slider__instock-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.11266 0.000793397C7.05271 -0.0141351 6.00036 0.181741 5.01677 0.57704C4.03317 0.972339 3.13795 1.55918 2.38312 2.30345C1.62829 3.04773 1.0289 3.9346 0.619788 4.91253C0.210677 5.89046 0 6.93994 0 8C0 9.06005 0.210677 10.1095 0.619788 11.0875C1.0289 12.0654 1.62829 12.9523 2.38312 13.6965C3.13795 14.4408 4.03317 15.0277 5.01677 15.423C6.00036 15.8183 7.05271 16.0141 8.11266 15.9992C10.2147 15.9696 12.2206 15.1138 13.6965 13.6169C15.1725 12.12 16 10.1022 16 8C16 5.89778 15.1725 3.88004 13.6965 2.38312C12.2206 0.886196 10.2147 0.0303984 8.11266 0.000793397ZM11.5795 6.64895C11.703 6.50082 11.7627 6.3097 11.7452 6.11763C11.7278 5.92555 11.6348 5.74826 11.4867 5.62475C11.3386 5.50124 11.1475 5.44164 10.9554 5.45904C10.7633 5.47645 10.586 5.56945 10.4625 5.71757L7.33678 9.46846L5.71837 7.85006C5.58203 7.71351 5.39703 7.63671 5.20406 7.63656C5.01109 7.63641 4.82597 7.71292 4.68942 7.84927C4.55286 7.98561 4.47607 8.17061 4.47592 8.36358C4.47577 8.55655 4.55228 8.74167 4.68862 8.87822L6.8703 11.0599C6.94164 11.1314 7.02711 11.1873 7.12126 11.224C7.21541 11.2606 7.31616 11.2772 7.41709 11.2728C7.51803 11.2683 7.61692 11.2428 7.70745 11.198C7.79798 11.1531 7.87817 11.0899 7.94289 11.0123L11.5795 6.64895Z"
+                                        fill="#992B82" />
+                                </svg>
+                            </div>
+                            <p class="product-slider__instock">
+                                В наличии
+                            </p>
+                        </div>
+                        <button class="product-slider__instock-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5616 2.26346L16.5628 2.26461C16.9728 2.66357 17.2958 3.13497 17.5149 3.65104L17.5151 3.65143C17.9591 4.69563 17.9583 5.8654 17.5129 6.90906L17.5129 6.90913C17.2928 7.42496 16.9689 7.89595 16.5581 8.29429L16.5558 8.29654L13.2125 11.5593L13.2125 11.5594L9.87106 14.8209C9.87082 14.8211 9.87058 14.8214 9.87034 14.8216C9.75516 14.9331 9.59413 15 9.42089 15C9.24781 15 9.08692 14.9332 8.97176 14.8219C8.97141 14.8216 8.97107 14.8212 8.97072 14.8209L8.50872 14.3688L8.50717 14.3671L8.48971 14.3482L8.47131 14.3302L2.28102 8.29015C2.28092 8.29005 2.28082 8.28995 2.28071 8.28985C1.45477 7.48137 0.998412 6.39692 1.00001 5.27438L1.00001 5.27288C0.999921 4.15025 1.45781 3.06626 2.28501 2.25877L2.28507 2.25871C2.6914 1.86199 3.17668 1.54538 3.71374 1.32872C4.25063 1.11212 4.82762 1.00014 5.41114 1C5.99473 1.00082 6.57163 1.1135 7.1083 1.33075C7.64512 1.54808 8.13002 1.8653 8.53585 2.26255L8.72407 2.4468L9.4226 3.13061L10.1221 2.44781L10.3109 2.26353L10.311 2.26346C10.7172 1.86686 11.2023 1.55028 11.7392 1.33354C12.2759 1.11686 12.8526 1.00467 13.436 1.00421C14.0195 1.00461 14.5964 1.11676 15.1332 1.33346L15.5076 0.406159L15.1332 1.33346C15.6702 1.5502 16.1553 1.86681 16.5616 2.26346Z" stroke="#992B82" stroke-width="2"/>
+                                </svg>
+                                
+
+                        </button>
+                    </div>
+                    <h5 class="product-slider__item-title">
+                        Зеркало с подсветкой Ambilight по трем сторонам с подогревом...
+                    </h5>
+                    <div class="product-slider__wrapper-price">
+                        <div class="product-slider__item-price">
+                            <p class="product-slider__price-old">20 300 руб</p>
+                            <p class="product-slider__price-new">от <span>13 200</span> руб</p>
+                        </div>
+                        <button class="product-slider__buy-btn">
+                            <div class="product-slider__buy"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#992B82" />
+                                    <path d="M10 4.28613V15.7147" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M15.7188 10L4.29018 10" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <img src="images/products-slider/card-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</section>
+        <div class="social-link">
+    <ul class="social-link__list">
+        <li class="social-link__item social-link__item--phone">
+            <a class="social-link__item-link" href="#"> <img src="images/social-link/1.png" alt=""></a>
+
+        </li>
+        <li class="social-link__item social-link__item--telegram">
+            <a class="social-link__item-link" href="#"> <img src="images/social-link/2.svg" alt=""></a>
+
+        </li>
+        <li class="social-link__item social-link__item--whatsapp">
+            <a class="social-link__item-link" href="#"> <img src="images/social-link/3.png" alt=""></a>
+
+        </li>
+        <li class="social-link__item social-link__item--chat">
+            <a class="social-link__item-link" href="#"><img src="images/social-link/4.png" alt=""></a>
+
+        </li>
+    </ul>
+</div>
+    </main>
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
